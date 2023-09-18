@@ -29,7 +29,7 @@ RETURNING id, created_at, updated_at, title, description, published_at, url, fee
 `
 
 type CreatePostParams struct {
-	ID          int32
+	ID          uuid.UUID
 	CreatedAt   time.Time
 	UpdatedAt   time.Time
 	Title       string
